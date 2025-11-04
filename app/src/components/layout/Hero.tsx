@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 
 export default function Hero() {
   return (
-    <section className="flex items-center justify-center p-4 m-auto">
+    <section id="hero" className="flex items-center justify-center pt-16 pb-16 md:pt-24 md:pb-24">
       <div className="max-w-4xl text-center space-y-8">
         {/* Tagline/Feature Highlight */}
         <Badge className="inline-flex items-center rounded-lg bg-primary/20"
@@ -15,14 +15,14 @@ export default function Hero() {
 
         {/* Main Headline */}
         <h2 className="text-3xl md:text-7xl font-extrabold tracking-tighter text-foreground leading-none">
-          Your Web3 Guide<br className="hidden sm:inline" />
-          <span className="text-primary">
+          Your Web3 Guide
+          <span className="block text-primary">
             Without the Sign-Up.
           </span>
         </h2>
 
         {/* Subtitle */}
-        <p className="text-xl text-foreground/60 max-w-2xl mx-auto">
+        <p className="text-md md:text-lg text-foreground/60 max-w-3xl mx-auto">
           Dive into core concepts of Crypto, Blockchain, NFTs, and DeFi. Start learning instantly. Lessons followed by AI-generated quizzes.
         </p>
 
@@ -35,6 +35,18 @@ export default function Hero() {
               <MoveRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
+        </div>
+
+        {/* Responsive hero image placeholder */}
+        <div className="pt-4">
+          <div className="mx-auto w-full max-w-5xl overflow-hidden rounded-xl border bg-secondary/10 shadow-sm m-4">
+            {/* Maintain a 16:9 rectangle that scales with width on all screens */}
+            <div className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label="Hero image placeholder">
+              <div className="h-full w-full grid place-items-center bg-gradient-to-br from-primary/10 via-background to-primary/5 text-foreground/60">
+                <span className="text-sm sm:text-base md:text-lg select-none">Hero Image</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

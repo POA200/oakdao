@@ -1,5 +1,7 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
+import HowItWorks from "@/components/layout/HowItWorks";
+import About from "@/components/layout/About";
 import Footer from "@/components/layout/Footer";
 
 export default function LandingPage() {
@@ -8,6 +10,8 @@ export default function LandingPage() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <HowItWorks />
+        <About />
       </main>
       <Footer />
     </div>
