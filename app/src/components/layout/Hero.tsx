@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex items-center justify-center pt-16 pb-16 md:pt-24 md:pb-24">
+    <section id="hero" className="flex items-center justify-center pt-24 pb-24">
       <div className="max-w-4xl text-center space-y-8">
         {/* Tagline/Feature Highlight */}
         <Badge className="inline-flex items-center rounded-lg bg-primary/20"
@@ -22,12 +22,12 @@ export default function Hero() {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-md md:text-lg text-foreground/60 max-w-3xl mx-auto">
+        <p className="text-sm md:text-lg text-foreground/60 max-w-3xl mx-auto">
           Dive into core concepts of Crypto, Blockchain, NFTs, and DeFi. Start learning instantly. Lessons followed by AI-generated quizzes.
         </p>
 
         {/* Primary Call To Action (CTA) */}
-        <div className="pt-4">
+        <div className="pt-1">
           <Link to="/dashboard">
             <Button size="lg" className="cursor-pointer px-8 py-7 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
             variant={'default'}>
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
 
         {/* Responsive hero image placeholder */}
-        <div className="pt-4">
+        <div className="pt-2">
           <div className="mx-auto w-full max-w-5xl overflow-hidden rounded-xl border bg-secondary/10 shadow-sm m-4">
             {/* Maintain a 16:9 rectangle that scales with width on all screens */}
             <div className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label="Hero image placeholder">
