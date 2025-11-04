@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { ThemeProvider } from '@/components/theme-provider'
 import LandingPage from '@/pages/LandingPage'
 import Dashboard from '@/pages/Dashboard'
+import LessonPage from '@/pages/LessonPage'
 
 function ScrollToHash() {
   const { hash } = useLocation()
@@ -25,6 +26,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/lesson/:slug" element={<LessonPage />} />
           {/* Fallback to home for unknown routes */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

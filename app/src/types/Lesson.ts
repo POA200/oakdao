@@ -1,23 +1,22 @@
+// app/src/types/Lesson.ts (Verify this file is saved correctly!)
 
-/**
- * Placeholder `Lesson` type.
- *
- * This file is intentionally minimal so frontend imports don't fail.
- * Extend fields to match your backend schema as needed.
- */
-export interface Lesson {
-	/** Unique identifier (string or UUID) */
-	id: string
-	/** Short title shown in lists/cards */
-	title: string
-	/** Short description / summary */
-	description?: string
-	/** Full lesson content (HTML/markdown/plain) */
-	content?: string
-	/** Optional tags */
-	tags?: string[]
-	/** ISO timestamp */
-	createdAt?: string
+export interface QuizQuestion { // <-- MUST HAVE 'export'
+  id: number;
+  question: string;
+  options: string[]; 
+  correctAnswerIndex: number; 
 }
 
-export type { Lesson as ILesson } // named alias if some code expects different import styles
+export interface StaticLesson { // <-- MUST HAVE 'export'
+  id: number;
+  title: string;
+  slug: string;
+  summary: string;
+  contentPath: string; 
+  createdAt: string;
+  quizJson: QuizQuestion[]; 
+}
+
+export interface LessonCardData extends Omit<StaticLesson, 'contentPath' | 'quizJson'> { // <-- MUST HAVE 'export'
+  isCompleted: boolean; 
+}
