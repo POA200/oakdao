@@ -12,7 +12,7 @@ export default function Hero() {
         src={HeroGradient}
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 w-full h-full object-cover -z-10 opacity-40"
+        className="pointer-events-none absolute inset-0 w-full h-full object-cover -z-10 opacity-50"
       />
       <div className="max-w-4xl text-center space-y-8">
         {/* Tagline/Feature Highlight */}
