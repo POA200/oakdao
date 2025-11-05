@@ -46,7 +46,10 @@ export default function SimpleHeader({ query, onQueryChange, onSearch, className
                 className="pl-9 h-10"
               />
             </div>
-            <Button type="submit" className="h-10 px-4">Search</Button>
+            <Button type="submit" className="h-10 px-3 sm:px-4" aria-label="Search lessons">
+              <Search className="h-4 w-4 sm:mr-2" />
+              <span className="hidden sm:inline">Search</span>
+            </Button>
           </form>
 
           <div className="shrink-0">

@@ -175,53 +175,162 @@ export default function LessonPage() {
             </div>
           </div>
         ) },
-        { title: 'Key Projects in the Stacks Ecosystem', body: (
-          <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-            <li>ALEX (DeFi), Arkadiko (loans), StackingDAO (stacking)</li>
-            <li>Gamma.io (NFTs), Zest Protocol (BTC-native lending)</li>
-            <li>CityCoins (MIA/NYC), Hiro & Xverse (dev tools & wallets)</li>
-          </ul>
+        { title: 'Key Projects on Stacks', body: (
+          <div className="space-y-4 text-sm sm:text-base">
+            <div>
+              <p className="font-semibold">Wallets you can use</p>
+              <p>@Xverse, @LeatherBTC, @asignaio, @Ryder_ID, @Ledger, and @boom_wallet + more.</p>
+            </div>
+            <div>
+              <p className="font-semibold">Stacking Platforms</p>
+              <p>@Xverse, @LeatherBTC, @TheFastPool</p>
+            </div>
+            <div>
+              <p className="font-semibold">Liquid Stacking</p>
+              <p>@StackingDao, @LisaLab_BTC</p>
+            </div>
+            <div>
+              <p className="font-semibold">DeFi on Stacks</p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>@ZestProtocol – Lending & borrowing platform on Stacks</li>
+                <li>@GraniteBTC – Unlock BTC DeFi via sBTC, no centralized custodians</li>
+                <li>@HermeticaFi – Bitcoin-backed stablecoin ($USDh) with approx. 25%+ APR</li>
+                <li>@ArkadikoFinance – Mint stablecoins & earn Bitcoin yield through open-source protocols</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold">DEXs on Stacks</p>
+              <p>@VelarBTC, @Bitflow_Finance, @ALEXLabBTC</p>
+            </div>
+            <div>
+              <p className="font-semibold">Meme Launchpads on Stacks</p>
+              <p>@stxcity and @fakfakfun leading the meme wave</p>
+            </div>
+            <div>
+              <p className="font-semibold">Tools</p>
+              <p>@stx – Real-time trading analytics for tokens and NFTs</p>
+              <p>@stxwatch – Live intelligence on tokens, wallets, and market activity</p>
+            </div>
+            <div>
+              <p className="font-semibold">GameFi on Stacks</p>
+              <p>@SkullcoinBTC – Find-to-earn gaming model</p>
+              <p>@stxcity – Lottery-style game</p>
+              <p>@stackswars – Time-based word battles using skill and strategy</p>
+            </div>
+            <div>
+              <p className="font-semibold">Builders & Ecosystem Tools</p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>@hirosystems – Built hiro.so to simplify dev building on Stacks</li>
+                <li>@LunarCrush – Social metrics and market data</li>
+                <li>@signal21btc – Deep research and data for Bitcoin L1 & L2</li>
+                <li>@trygamma – NFT platform supporting @Stacks</li>
+                <li>@aibtcdev – First AI-powered agent on Stacks</li>
+                <li>@blocksurvey – Web3 forms and survey tools</li>
+                <li>@easya_app – Learn and build on Stacks easily</li>
+                <li>@boostx_app – Tip or get tipped directly on X</li>
+                <li>@DeOrganizedBTC – The media hub covering Bitcoin and Stacks</li>
+              </ul>
+            </div>
+          </div>
         ) },
         { title: 'Web3 Tools & Infrastructure', body: (
-          <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-            <li>Wallets: Xverse, Leather, Hiro</li>
-            <li>Decentralized storage: IPFS, Arweave</li>
-            <li>DAOs for governance; Oracles for real-world data</li>
-          </ul>
+          <div className="space-y-4 text-sm sm:text-base">
+            <p>Web3 is where users take control, no middlemen, just code, wallets, and freedom.</p>
+            <div>
+              <p className="font-semibold">Wallets (Xverse, Leather)</p>
+              <p>Your key to the decentralized world.</p>
+              <ul className="list-disc pl-5 space-y-1 mt-1">
+                <li><span className="font-medium">Xverse</span>: Built for Bitcoin and Stacks — supports Ordinals, Runes, NFTs, and DeFi.</li>
+                <li><span className="font-medium">Leather</span>: Open-source wallet linking Bitcoin to Layer 2s with smooth UX and security.</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold">Decentralized Storage (IPFS, Arweave)</p>
+              <p>Where data lives forever.</p>
+              <ul className="list-disc pl-5 space-y-1 mt-1">
+                <li><span className="font-medium">IPFS</span>: Fast and open storage for NFTs and dApps.</li>
+                <li><span className="font-medium">Arweave</span>: “Pay once, store forever” — perfect for permanent data.</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-semibold">DAOs</p>
+              <p>Community-run organizations that make decisions through tokens, not CEOs.</p>
+            </div>
+            <div>
+              <p className="font-semibold">Oracles (Chainlink, Pyth)</p>
+              <p>They feed real-world data (like prices or weather) to smart contracts so apps can react in real time.</p>
+            </div>
+            <p>Web3 tools put control, ownership, and transparency back in your hands.</p>
+          </div>
         ) },
         { title: 'Career Opportunities in Web3', body: (
-          <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-            <li>Developers (smart contracts, DApps), designers, PMs</li>
-            <li>Community, marketing, education, and content</li>
-          </ul>
+          <div className="space-y-3 text-sm sm:text-base">
+            <p>Web3 is full of open doors, no degree needed, just skills and consistency.</p>
+            <div>
+              <p className="font-semibold">Paths to explore:</p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Developers: Build smart contracts and dApps.</li>
+                <li>Designers: Create clean, simple Web3 experiences.</li>
+                <li>Community & Marketing: Grow real communities, not followers.</li>
+                <li>Writers & Educators: Teach, explain, and onboard people into crypto.</li>
+                <li>Builders: Start something of your own — that’s the real Web3 spirit.</li>
+              </ul>
+            </div>
+            <p>If you can learn fast, you can lead here.</p>
+          </div>
         ) },
         { title: 'Staying Safe in Web3', body: (
-          <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-            <li>Never share seed phrases or private keys</li>
-            <li>Verify links; beware phishing and rug pulls</li>
-            <li>Use hardware wallets for large funds</li>
-          </ul>
+          <div className="space-y-2 text-sm sm:text-base">
+            <p>Freedom in Web3 comes with responsibility.</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Never share your seed phrase — it’s your money.</li>
+              <li>Always double-check links before connecting.</li>
+              <li>Watch out for fake airdrops or rug pulls.</li>
+              <li>Use hardware wallets for large funds.</li>
+              <li>Follow only verified community channels.</li>
+            </ul>
+            <p>You are your own bank, protect yourself like one.</p>
+          </div>
         ) },
         { title: 'Hands-On Activities', body: (
-          <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-            <li>Create and fund a Stacks wallet</li>
-            <li>Send a transaction; mint an NFT on Gamma.io</li>
-            <li>Try DeFi on ALEX or Arkadiko; join the community</li>
-          </ul>
+          <div className="space-y-2 text-sm sm:text-base">
+            <p>The best way to learn Web3 is by doing it yourself. Try these:</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Create a Stacks wallet using Xverse</li>
+              <li>Send a small test transaction</li>
+              <li>Visit Gamma.io and mint a free NFT</li>
+              <li>Explore DeFi on Stacks using StackingDAO, Zest Protocol, Bitflow, Velar, or Arkadiko</li>
+              <li>Join the Stacks Discord and chat with the community</li>
+            </ul>
+            <p>Learning by doing helps you truly understand how blockchain works.</p>
+          </div>
         ) },
         { title: 'The Bigger Picture', body: (
-          <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-            <li>Web3 = ownership and freedom</li>
-            <li>Blockchain = trustless systems</li>
-            <li>Bitcoin = foundation; Stacks = future of Bitcoin utility</li>
-          </ul>
+          <div className="space-y-2 text-sm sm:text-base">
+            <p>When you step back, you’ll see that:</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Web3 is about owning your data and having freedom online</li>
+              <li>Blockchain makes it all possible by removing the need for middlemen</li>
+              <li>Bitcoin is the strong base that keeps everything secure</li>
+              <li>Stacks connects Bitcoin to smart contracts and apps</li>
+            </ul>
+            <p>Together, they’re building a new kind of internet that is open, fair, and unstoppable.</p>
+          </div>
         ) },
         { title: 'Thank You & Next Steps', body: (
-          <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-            <li>Explore: stacks.co</li>
-            <li>Join: Stacks Discord, Xverse, or community spaces</li>
-            <li>Build: Try Clarity and launch your first DApp</li>
-          </ul>
+          <div className="space-y-2 text-sm sm:text-base">
+            <p>This is just the beginning of your Web3 journey. Keep exploring and building.</p>
+            <div>
+              <p className="font-semibold">Next Steps:</p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Visit stacks.co and stacks.org to learn more</li>
+                <li>Join the Stacks community on Discord and X</li>
+                <li>Learn Clarity, the coding language for Bitcoin apps</li>
+                <li>Stay curious because the Web3 future belongs to the builders</li>
+              </ul>
+            </div>
+            <p className="italic">Welcome to Web3 — Powered by Stacks. Secured by Bitcoin.</p>
+          </div>
         ) },
       ];
     }
@@ -337,22 +446,22 @@ export default function LessonPage() {
           </div>
           <Card className="mx-auto shadow-md">
             <CardHeader>
-              <CardTitle className="text-2xl">{slides[currentSlide].title}</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl">{slides[currentSlide].title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="min-h-[12rem] sm:min-h-[14rem] leading-relaxed">
+              <div className="min-h-[10rem] sm:min-h-[14rem] leading-relaxed">
                 {slides[currentSlide].body}
               </div>
-              <div className="mt-6 flex items-center justify-between gap-2">
-                <Button variant="outline" disabled={atFirst} onClick={() => setCurrentSlide((s) => Math.max(0, s - 1))}>
+              <div className="mt-6 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-2">
+                <Button className="w-full sm:w-auto" variant="outline" disabled={atFirst} onClick={() => setCurrentSlide((s) => Math.max(0, s - 1))}>
                   Prev
                 </Button>
                 {!atLast ? (
-                  <Button onClick={() => setCurrentSlide((s) => Math.min(slides.length - 1, s + 1))}>
+                  <Button className="w-full sm:w-auto" onClick={() => setCurrentSlide((s) => Math.min(slides.length - 1, s + 1))}>
                     Next
                   </Button>
                 ) : (
-                  <Button onClick={() => setCurrentSlide(slides.length)} className="bg-primary text-primary-foreground">
+                  <Button className="w-full sm:w-auto bg-primary text-primary-foreground" onClick={() => setCurrentSlide(slides.length)}>
                     <Zap className="h-4 w-4 mr-2" /> Take AI Quiz
                   </Button>
                 )}
@@ -404,12 +513,12 @@ export default function LessonPage() {
                         );
                       })}
                     </div>
-                    <div className="mt-6 flex items-center justify-between gap-2">
-                      <Button variant="outline" disabled={qIndex === 0} onClick={() => setQIndex(i => Math.max(0, i - 1))}>Prev</Button>
+                    <div className="mt-6 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <Button className="w-full sm:w-auto" variant="outline" disabled={qIndex === 0} onClick={() => setQIndex(i => Math.max(0, i - 1))}>Prev</Button>
                       {qIndex < totalQuiz - 1 ? (
-                        <Button onClick={() => setQIndex(i => Math.min(totalQuiz - 1, i + 1))}>Next</Button>
+                        <Button className="w-full sm:w-auto" onClick={() => setQIndex(i => Math.min(totalQuiz - 1, i + 1))}>Next</Button>
                       ) : (
-                        <Button disabled={!canSubmit} onClick={() => {
+                        <Button className="w-full sm:w-auto" disabled={!canSubmit} onClick={() => {
                           setSubmitted(true);
                           const { score } = computeScore();
                           // Save completion if passed
@@ -445,9 +554,9 @@ export default function LessonPage() {
                               ))}
                             </div>
                           )}
-                          <div className="mt-6 flex items-center justify-between gap-2">
-                            <Button variant="outline" onClick={() => { setSubmitted(false); setAnswers(new Array(totalQuiz).fill(-1)); setQIndex(0); }}>Retake Quiz</Button>
-                            <Button onClick={() => navigate('/dashboard')}>Back to Dashboard</Button>
+                          <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <Button className="w-full sm:w-auto" variant="outline" onClick={() => { setSubmitted(false); setAnswers(new Array(totalQuiz).fill(-1)); setQIndex(0); }}>Retake Quiz</Button>
+                            <Button className="w-full sm:w-auto" onClick={() => navigate('/dashboard')}>Back to Dashboard</Button>
                           </div>
                         </div>
                       );

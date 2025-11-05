@@ -68,6 +68,79 @@ export const ALL_LESSONS: StaticLesson[] = [
         options: ["Proof of Stake (PoS)", "Proof of Work (PoW)", "Proof of Transfer (PoX)", "Practical Byzantine Fault Tolerance (PBFT)"],
         correctAnswerIndex: 2
       }
+      ,
+      {
+        id: 7,
+        question: "Which of the following is a DEX on Stacks?",
+        options: ["VelarBTC", "Gamma.io", "Chainlink", "Leather"],
+        correctAnswerIndex: 0
+      },
+      {
+        id: 8,
+        question: "Which statement about decentralized storage is true?",
+        options: [
+          "IPFS is 'pay once, store forever' while Arweave is for fast retrieval",
+          "Arweave is 'pay once, store forever' while IPFS provides distributed file addressing",
+          "Both IPFS and Arweave are centralized cloud providers",
+          "Neither IPFS nor Arweave are used in Web3"
+        ],
+        correctAnswerIndex: 1
+      },
+      {
+        id: 9,
+        question: "Which is a common career path in Web3?",
+        options: [
+          "Smart contract and dApp developer",
+          "CEO of a centralized bank",
+          "Fax machine operator",
+          "DVD rental store manager"
+        ],
+        correctAnswerIndex: 0
+      },
+      {
+        id: 10,
+        question: "Which is a recommended safety practice in Web3?",
+        options: [
+          "Share your seed phrase with support",
+          "Always double-check links before connecting",
+          "Click unverified airdrop links to qualify",
+          "Store large funds in browser local storage"
+        ],
+        correctAnswerIndex: 1
+      },
+      {
+        id: 11,
+        question: "Which of these is a hands-on activity to learn Web3?",
+        options: [
+          "Mint a free NFT on Gamma.io",
+          "Memorize coin tickers only",
+          "Read about Web3 without trying apps",
+          "Disable your wallet to stay safe"
+        ],
+        correctAnswerIndex: 0
+      },
+      {
+        id: 12,
+        question: "Which pairing is correct?",
+        options: [
+          "Stacks removes Bitcoin from the equation",
+          "Bitcoin is the foundation; Stacks connects it to smart contracts",
+          "Web3 means companies own your data",
+          "Blockchain relies on CEOs to approve transactions"
+        ],
+        correctAnswerIndex: 1
+      },
+      {
+        id: 13,
+        question: "Which is a suggested next step after this lesson?",
+        options: [
+          "Learn Clarity to build Bitcoin apps",
+          "Avoid all communities and tools",
+          "Wait for permission from a central authority",
+          "Use Web3 only for memes"
+        ],
+        correctAnswerIndex: 0
+      }
     ],
   },
 ];

@@ -114,7 +114,7 @@ export default function Dashboard() {
       <div className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 py-12">
         <div className="w-full flex flex-col items-center gap-8">
           <header className="text-center max-w-3xl">
-            <h1 className="text-4xl font-extrabold tracking-tight mb-2 text-foreground">Web3 Learning Platform!</h1>
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-2 text-foreground">Web3 Learning Platform!</h1>
             <p className="text-base sm:text-lg text-muted-foreground">
               Your friction-free path to Web3 fluency. Progress is tracked locally in your browser.
             </p>
@@ -123,7 +123,7 @@ export default function Dashboard() {
           {filteredLessons.map(lesson => (
             <Card
               key={lesson.id}
-              className="w-full max-w-3xl sm:max-w-4xl lg:max-w-5xl min-h-[60vh] hover:shadow-xl transition-shadow duration-300 flex flex-col"
+              className="w-full max-w-3xl sm:max-w-4xl lg:max-w-5xl min-h-[50vh] sm:min-h-[60vh] hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
               <CardHeader>
                 {/* Image placeholder */}
@@ -159,7 +159,7 @@ export default function Dashboard() {
       <Footer />
       {/* Table of Contents Modal */}
       <Dialog open={!!selectedSlug} onOpenChange={(o) => { if (!o) setSelectedSlug(null); }}>
-        <DialogContent className="max-w-xl">
+  <DialogContent className="w-[90vw] max-w-xl sm:w-auto">
           <DialogHeader>
             <DialogTitle>Web3 Foundations — Table of Contents</DialogTitle>
             <DialogDescription>
