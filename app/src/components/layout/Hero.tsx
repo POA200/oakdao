@@ -3,6 +3,7 @@ import { MoveRight } from "lucide-react"
 import { Link } from "react-router-dom"
 import { Badge } from "@/components/ui/badge"
 import HeroGradient from "@/assets/Herogradient.png"
+import HeroImage from "@/assets/Heroimage.png"
 
 export default function Hero() {
   return (
@@ -45,14 +46,12 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* Responsive hero image placeholder */}
+        {/* Responsive hero image */}
         <div className="pt-2 m-4 md:m-1">
-          <div className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-xl border bg-secondary/10 shadow-sm m-4 ">
+          <div className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-xl border bg-secondary/10 m-4 ring-1 ring-primary/20 shadow-[0_0_28px_6px_hsl(var(--primary))] sm:shadow-[0_0_48px_10px_hsl(var(--primary))]">
             {/* Maintain a 16:9 rectangle that scales with width on all screens */}
-            <div className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label="Hero image placeholder">
-              <div className="h-full w-full grid place-items-center bg-gradient-to-br from-primary/10 via-background to-primary/5 text-foreground/60">
-                <span className="text-sm sm:text-base md:text-lg select-none">Hero Image</span>
-              </div>
+            <div className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label="Hero image">
+              <img src={HeroImage} alt="OakDAO hero" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>

@@ -1,4 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import PickALessonImg from "@/assets/Pickalesson.png"
+import LearnFastImg from "@/assets/Learnfast.png"
+import QuizImg from "@/assets/Quiz.png"
 
 export default function HowItWorks() {
   return (
@@ -23,16 +26,10 @@ export default function HowItWorks() {
         <Card className="bg-background/60">
           <CardHeader>
             <CardDescription className="mb-4">
-            {/* Image placeholder above the title */}
+            {/* Preview image */}
             <div className="w-full overflow-hidden rounded-lg border bg-secondary/10">
-              <div
-                className="w-full"
-                style={{ aspectRatio: '16 / 9' }}
-                aria-label="Pick a lesson image placeholder"
-              >
-                <div className="h-full w-full grid place-items-center bg-gradient-to-br from-primary/10 via-background to-primary/5 text-foreground/60">
-                  <span className="text-[0.8rem] select-none">Pick a lesson</span>
-                </div>
+              <div className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label="Pick a lesson image">
+                <img src={PickALessonImg} alt="Pick a lesson" className="h-full w-full object-cover" />
               </div>
             </div>
             </CardDescription>
@@ -46,16 +43,10 @@ export default function HowItWorks() {
         <Card className="bg-background/60">
           <CardHeader>
             <CardDescription className="mb-4">
-            {/* Image placeholder above the title */}
+            {/* Preview image */}
             <div className="w-full overflow-hidden rounded-lg border bg-secondary/10">
-              <div
-                className="w-full"
-                style={{ aspectRatio: '16 / 9' }}
-                aria-label="Pick a lesson image placeholder"
-              >
-                <div className="h-full w-full grid place-items-center bg-gradient-to-br from-primary/10 via-background to-primary/5 text-foreground/60">
-                  <span className="text-[0.8rem] select-none">Learn fast</span>
-                </div>
+              <div className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label="Learn fast image">
+                <img src={LearnFastImg} alt="Learn fast" className="h-full w-full object-cover" />
               </div>
             </div>
             </CardDescription>
@@ -69,16 +60,10 @@ export default function HowItWorks() {
         <Card className="bg-background/60">
           <CardHeader>
             <CardDescription className="mb-4">
-            {/* Image placeholder above the title */}
+            {/* Preview image */}
             <div className="w-full overflow-hidden rounded-lg border bg-secondary/10">
-              <div
-                className="w-full"
-                style={{ aspectRatio: '16 / 9' }}
-                aria-label="Pick a lesson image placeholder"
-              >
-                <div className="h-full w-full grid place-items-center bg-gradient-to-br from-primary/10 via-background to-primary/5 text-foreground/60">
-                  <span className="text-[0.8rem] select-none">Quiz & reinforce</span>
-                </div>
+              <div className="w-full" style={{ aspectRatio: '16 / 9' }} aria-label="Quiz & reinforce image">
+                <img src={QuizImg} alt="Quiz and reinforce" className="h-full w-full object-cover" />
               </div>
             </div>
             </CardDescription>

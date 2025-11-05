@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import SimpleHeader from "@/components/layout/SimpleHeader";
 import Footer from "@/components/layout/Footer";
+import LessonPreviewImg from "@/assets/web1tostxLessonpreviw.png";
 
 // --- NEW STATIC CONTENT IMPORTS ---
 import { ALL_LESSONS } from '@/data/lessons';
@@ -126,9 +127,15 @@ export default function Dashboard() {
               className="w-full max-w-3xl sm:max-w-4xl lg:max-w-5xl min-h-[50vh] sm:min-h-[60vh] hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
               <CardHeader>
-                {/* Image placeholder */}
-                <div className="w-full h-48 md:h-64 rounded-md border bg-accent/10 dark:bg-accent/20 mb-4 flex items-center justify-center text-sm text-muted-foreground">
-                  Lesson preview
+                {/* Lesson preview image (16:8 / 2:1 aspect ratio, responsive) */}
+                <div className="w-full rounded-md border overflow-hidden mb-4">
+                  <div className="w-full" style={{ aspectRatio: '2 / 1' }} aria-label="Lesson preview image">
+                    <img
+                      src={LessonPreviewImg}
+                      alt={`${lesson.title} preview`}
+                      className="block h-full w-full object-cover"
+                    />
+                  </div>
                 </div>
                 <div className="flex flex-wrap gap-3 items-start justify-between">
                   <CardTitle className="text-2xl sm:text-3xl">{lesson.title}</CardTitle>
